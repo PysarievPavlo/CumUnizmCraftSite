@@ -1,0 +1,17 @@
+{
+    "name": "myproject/myapp",
+    "description": "123",
+    "autoload": {
+        "psr-4": {
+            "Myproject\\Myapp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Muwyn"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    }
+}

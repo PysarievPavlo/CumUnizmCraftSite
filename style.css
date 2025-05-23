@@ -1,0 +1,273 @@
+html, body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #48616F;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+header {
+    background-color: #48616F;
+    padding: 10px;
+    
+}
+av {
+    display: flex;
+    align-items: center; /* Выравнивание по вертикали */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    
+}
+
+nav > div > a {
+    color: white;
+    font-size: 1em;
+    margin-left: 20px;
+    text-decoration: none;
+    padding: 5px 10px; /* Добавляем отступы */
+    border-radius: 5px; /* Скругляем углы */
+    transition: background-color 0.3s ease; /* Добавляем плавный переход */
+}
+
+nav > div > a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Добавляем эффект при наведении */
+}
+nav div { /* Добавляем правило для div */
+    display: flex;
+    margin-left: auto;
+}
+nav > a:first-child {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+main {
+    display: flex;
+    align-items: flex-start; /* Вирівнювання по вертикалі */
+    min-height: calc(100vh - 140px);
+    background-image: url('/images/background.png');
+    background-color: #F4CC8F;
+    flex-direction: column; /* Вертикальне розташування елементів */
+    padding-top: 20px;
+}
+
+.login-section {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 550px;
+    border: none;
+    margin: 0 auto; /* Додано */
+}
+
+.login-section input {
+    margin: 5px;
+    padding: 8px;
+    width: 200px;
+    
+}
+
+.vote-section {
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #48616F;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto; /* Добавлено */
+    color: white;
+}
+
+/* Стилі для скінів */
+.skin-viewer__view {
+    width: 150px; /* або будь-який інший розмір */
+    margin: 5px;
+    display: inline-block;
+}
+.skin-container {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+    margin: 20px auto; /* Центрируем контейнер */
+    width: 500px; /* Устанавливаем ширину по содержимому */
+}
+
+.skin-viewer__view__img {
+    display: block;
+    width: 140px;
+    height: 280px;
+    border: none;
+}
+
+.skin-viewer__back {
+    /* Додаткові стилі для виду спереду, якщо потрібно */
+}
+
+.skin-viewer__front {
+    /* Додаткові стилі для виду ззаду, якщо потрібно */
+}
+
+.row {
+    display: flex; /* Додано для сумісності з деякими браузерами */
+    align-items: center;
+}
+
+.col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.login-form {
+    width: 350px; /* або 400px */
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-height: 250px;
+    background-color: #48616F;
+    
+}
+
+.login-form .form-control {
+    margin-bottom: 10px;
+    border: none;
+}
+
+.login-form .btn {
+    margin-bottom: 5px; /* Додаємо відступи між кнопками */
+    border: none;
+    width: 150px !important;
+}
+
+login-form a {
+    margin-bottom: 5px; /* Додаємо відступи між посиланнями */
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%; /* Розтягуємо поля введення на всю ширину */
+    padding: 10px;
+    box-sizing: border-box; /* Враховуємо padding та border у ширину */
+}
+
+.login-form .btn-block {
+    display: block; /* Розтягуємо кнопки та посилання на всю ширину */
+    width: 150px !important;
+}
+
+.btn-primary {
+    /* ... другие стили ... */
+    width: 150px !important; /* Измените значение ширины */
+}
+.login-form .btn-primary.btn-block {
+    width: 100px !important;
+}
+.inner-container {
+    border: 2px solid rgb(0, 0, 0); /* Замініть red на потрібний колір */
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px; /* Додайте зовнішні відступи, якщо потрібно */
+    width: 600px;
+    margin: 20px auto;
+    background-color: #48616F;
+}
+
+.banner {
+    position: relative;
+    width: 70%;
+    height: 600px;
+    margin-bottom: 20px;
+    align-self: flex-start;
+    margin: 0 auto 20px auto;
+    overflow: hidden; /* Додано для обрізання зображень */
+}
+
+.banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000080;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+@keyframes backgroundMove {
+    0% { background-position: center top; }
+    50% { background-position: center bottom; }
+    100% { background-position: center top; }
+}
+
+.join-button-banner {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+.section {
+    background: #48616F;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ffffff1a;
+    width: 70%; /* Додано для відповідності ширині баннера */
+}
+
+.section h2 {
+    color: white; /* Додано для білого кольору заголовка */
+    text-align: center;
+}
+
+.section p {
+    color: #ccc; /* Додано для світло-сірого кольору тексту */
+}
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Додано для масштабування зображень */
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
